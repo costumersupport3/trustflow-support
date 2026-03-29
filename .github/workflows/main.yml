@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUSTFLOW - Global Money Transfer | Customer Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-button {
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+            transform: translateY(-2px);
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .pulse-ring {
+            position: relative;
+        }
+        .pulse-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            z-index: -1;
+            opacity: 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(1.1); opacity: 0; }
+        }
+        .mesh-bg {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 40% 20%, hsla(260,100%,60%,0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, hsla(189,100%,56%,0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(340,100%,76%,0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 50%, hsla(260,100%,60%,0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(189,100%,56%,0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 100%, hsla(260,100%,60%,0.15) 0px, transparent 50%);
+        }
+        .security-badge {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(34, 197, 94, 0.05));
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+    </style>
+</head>
+<body class="mesh-bg min-h-screen text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i data-lucide="send" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <span class="font-display text-2xl font-bold tracking-tight">TRUST<span class="text-blue-400">FLOW</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="#support" class="text-gray-300 hover:text-white transition-colors">Support</a>
+                    <div class="flex items-center space-x-2 text-green-400">
+                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <span class="text-sm font-medium">Live Support Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-blue-400"></i>
+                    <span class="text-sm text-gray-300">256-bit SSL Secured Platform</span>
+                </div>
+                <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
+                    Transfer Money <br>
+                    <span class="gradient-text">Across the World</span><br>
+                    in Real Time
+                </h1>
+                <p class="text-xl text-gray-400 max-w-lg leading-relaxed">
+                    Welcome to TRUSTFLOW Customer Support. We ensure your transactions are smooth, fast, and reliable with 24/7 dedicated assistance.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/message/YBZZ2LBIDTFQA1" target="_blank" class="pulse-ring glow-button inline-flex items-center space-x-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-400 hover:to-green-500 transition-all">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        <span>Get Support on WhatsApp</span>
+                    </a>
+                    <div class="flex items-center space-x-4 text-gray-400">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-xs font-bold border-2 border-slate-900">24/7</div>
+                            <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-xs font-bold border-2 border-slate-900">AI</div>
+                            <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-xs font-bold border-2 border-slate-900">HUM</div>
+                        </div>
+                        <span class="text-sm">Instant Response</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur-3xl opacity-20 floating"></div>
+                <div class="relative glass-card rounded-3xl p-8 space-y-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-gray-400">Transaction Status</span>
+                        <span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium">Active</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 rounded-2xl bg-white/5">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
+                                    <i data-lucide="trending-up" class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Success Rate</p>
+                                    <p class="text-sm text-gray-400">Last 24 hours</p>
+                                </div>
+                            </div>
+                            <span class="text-2xl font-bold text-green-400">99.9%</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-2xl bg-white/5">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center">
+                                    <i data-lucide="clock" class="w-5 h-5 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Avg. Resolution</p>
+                                    <p class="text-sm text-gray-400">Support tickets</p>
+                                </div>
+                            </div>
+                            <span class="text-2xl font-bold text-purple-400">2m</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/10">
+                        <div class="flex justify-between text-sm text-gray-400">
+                            <span>Global Coverage</span>
+                            <span class="text-white font-semibold">150+ Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="py-12 border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-white">$2.5B+</p>
+                    <p class="text-sm text-gray-400">Transactions Processed</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-white">50K+</p>
+                    <p class="text-sm text-gray-400">Happy Customers</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-white">24/7</p>
+                    <p class="text-sm text-gray-400">Support Available</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-white">0%</p>
+                    <p class="text-sm text-gray-400">Hidden Fees</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-display text-4xl font-bold mb-4">Common Transaction Support Services</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Professional resolution services for critical transaction issues. Fast, secure, and reliable.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Weekend Issues -->
+            <div class="glass-card rounded-3xl p-8 hover:bg-white/5 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl group-hover:bg-orange-500/20 transition-all"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calendar-x" class="w-7 h-7 text-orange-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Weekend Transaction Issues</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Some transactions made during weekends may experience processing delays due to banking hours. Our specialized team can resolve these issues immediately.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b border-white/10">
+                            <span class="text-gray-400">Resolution Fee</span>
+                            <span class="text-2xl font-bold text-orange-400">$400</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <span class="text-gray-400">Processing Time</span>
+                            <span class="text-green-400 font-semibold flex items-center">
+                                <i data-lucide="zap" class="w-4 h-4 mr-1"></i>
+                                Instant
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full mt-6 py-3 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500 hover:text-white transition-all">
+                        Resolve Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Delay Issues -->
+            <div class="glass-card rounded-3xl p-8 hover:bg-white/5 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="timer" class="w-7 h-7 text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Transaction Delay Issues</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">If your transfer is delayed beyond the expected time frame, our priority support team can expedite the process and ensure your funds reach their destination.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b border-white/10">
+                            <span class="text-gray-400">Resolution Fee</span>
+                            <span class="text-2xl font-bold text-blue-400">$200</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <span class="text-gray-400">Processing Time</span>
+                            <span class="text-green-400 font-semibold flex items-center">
+                                <i data-lucide="zap" class="w-4 h-4 mr-1"></i>
+                                Instant
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full mt-6 py-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 font-semibold hover:bg-blue-500 hover:text-white transition-all">
+                        Resolve Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10"></div>
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full security-badge mb-6">
+                    <i data-lucide="shield" class="w-8 h-8 text-green-400"></i>
+                </div>
+                <h2 class="font-display text-3xl font-bold mb-4">Bank-Grade Security</h2>
+                <p class="text-gray-400 mb-8">Your transactions are protected with 256-bit SSL encryption, two-factor authentication, and real-time fraud monitoring. We never store your banking credentials.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/5">
+                        <i data-lucide="lock" class="w-4 h-4 text-green-400"></i>
+                        <span class="text-sm">End-to-End Encrypted</span>
+                    </div>
+                    <div class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/5">
+                        <i data-lucide="eye-off" class="w-4 h-4 text-green-400"></i>
+                        <span class="text-sm">Privacy Protected</span>
+                    </div>
+                    <div class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/5">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i>
+                        <span class="text-sm">PCI DSS Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section id="support" class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+        <div class="space-y-8">
+            <h2 class="font-display text-4xl font-bold">Need Help?</h2>
+            <p class="text-xl text-gray-400">Our support team is available to assist you anytime, anywhere. Get instant help via WhatsApp.</p>
+            
+            <div class="glass-card rounded-3xl p-8 inline-block w-full max-w-md">
+                <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-green-500/20 flex items-center justify-center pulse-ring">
+                    <i data-lucide="message-circle" class="w-10 h-10 text-green-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">WhatsApp Support</h3>
+                <p class="text-gray-400 mb-6">Average response time: Under 2 minutes</p>
+                <a href="https://wa.me/message/YBZZ2LBIDTFQA1" target="_blank" class="inline-flex items-center justify-center space-x-2 w-full py-4 rounded-xl bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg hover:from-green-400 hover:to-green-500 transition-all glow-button">
+                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                    <span>Start Chat Now</span>
+                </a>
+                <p class="mt-4 text-sm text-gray-500">Available 24/7 • End-to-end encrypted</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <i data-lucide="send" class="w-4 h-4 text-white"></i>
+                </div>
+                <span class="font-display text-xl font-bold">TRUST<span class="text-blue-400">FLOW</span></span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                © 2026 TRUSTFLOW. All rights reserved. Secure global money transfers.
+            </div>
+            <div class="flex space-x-6">
+                <i data-lucide="shield" class="w-5 h-5 text-gray-600"></i>
+                <i data-lucide="lock" class="w-5 h-5 text-gray-600"></i>
+                <i data-lucide="globe" class="w-5 h-5 text-gray-600"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-slate-900/80', 'backdrop-blur-md', 'border-b', 'border-white/10');
+            } else {
+                navbar.classList.remove('bg-slate-900/80', 'backdrop-blur-md', 'border-b', 'border-white/10');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add click handlers for service buttons
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('Resolve Now')) {
+                btn.addEventListener('click', () => {
+                    window.open('https://wa.me/message/YBZZ2LBIDTFQA1', '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
